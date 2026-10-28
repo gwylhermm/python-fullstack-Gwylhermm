@@ -3,8 +3,8 @@
 MÓDULO 2 – Estruturas de Controle
 Curso de Capacitação Full Stack – ITEAM
 
-Aluno(a): <SEU NOME COMPLETO AQUI>
-Data    : <DATA DE ENTREGA>
+Aluno(a): <GWYLHERMM MOTA RODRIGUES>
+Data    : <28/10/2026>
 =============================================================
 
 INSTRUÇÕES:
@@ -36,8 +36,24 @@ def ex01_classificador_temperatura():
         25 a 34   → ☀️ Quente
         >= 35     → 🔥 Muito quente
     """
-    # SUA SOLUÇÃO AQUI
-    pass
+    # Lê a temperatura e converte para float (aceita valores decimais)
+    temperatura = float(input("Digite a temperatura em Celsius: "))
+
+    # Testa as faixas em ordem, da mais baixa para a mais alta
+    if temperatura < 0:
+        print("❄️ Congelante")
+    elif temperatura < 15:
+        # Chega aqui só se for >= 0 e < 15
+        print("🥶 Frio")
+    elif temperatura < 25:
+        # Chega aqui só se for >= 15 e < 25
+        print("😊 Agradável")
+    elif temperatura < 35:
+        # Chega aqui só se for >= 25 e < 35
+        print("☀️ Quente")
+    else:
+        # Sobrou apenas >= 35
+        print("🔥 Muito quente")
 
 
 # ==============================================================
@@ -52,8 +68,19 @@ def ex02_validador_acesso():
         usuário → "admin"
         senha   → "iteam2025"
     """
-    # SUA SOLUÇÃO AQUI
-    pass
+    # Solicita as credenciais (input() retorna string)
+    usuario = input("Usuário: ")
+    senha = input("Senha: ")
+
+    # Primeiro nível: verifica o usuário
+    if usuario == "admin":
+        # Segundo nível: só verifica a senha se o usuário estiver certo
+        if senha == "iteam2025":
+            print("✅ Acesso liberado! Bem-vindo, admin.")
+        else:
+            print("❌ Senha incorreta.")
+    else:
+        print("❌ Usuário não encontrado.")
 
 
 # ==============================================================
@@ -64,9 +91,14 @@ def ex03_tabuada():
     """
     Solicita um número inteiro e exibe sua tabuada de 1 a 10.
     """
-    # SUA SOLUÇÃO AQUI
-    pass
+    # Lê o número e converte para int para poder multiplicar
+    numero = int(input("Digite um número inteiro: "))
 
+    # range(1, 11) gera os valores de 1 até 10 (o 11 não entra)
+    for i in range(1, 11):
+        resultado = numero * i
+        # :>3 e :>4 alinham os números à direita, deixando as colunas retas
+        print(f"{numero:>3} x {i:>2} = {resultado:>4}")
 
 # ==============================================================
 # EXERCÍCIO 04 – Contador Regressivo
@@ -77,8 +109,19 @@ def ex04_contador_regressivo():
     Solicita um número inteiro positivo e faz a contagem
     regressiva até 0, finalizando com '🚀 Lançamento!'.
     """
-    # SUA SOLUÇÃO AQUI
-    pass
+    # Lê o número inicial e converte para int
+    contador = int(input("Digite um número inteiro positivo: "))
+
+    # Repete enquanto o contador for maior ou igual a 0
+    while contador >= 0:
+        # end=" " mantém tudo na mesma linha, separado por espaço
+        print(contador, end=" ")
+        # Diminui 1 a cada volta; sem isso o loop seria infinito
+        contador -= 1
+
+    # Pula para a próxima linha e exibe a mensagem final
+    print()
+    print("🚀 Lançamento!")
 
 
 # ==============================================================
