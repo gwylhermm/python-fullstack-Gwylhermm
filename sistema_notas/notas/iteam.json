@@ -1,0 +1,16 @@
+[
+    {
+        "aluno": "gwylhermm rodrigues",
+        "nota1": 9.5,
+        "nota2": 8.0,
+        "nota3": 10.0,
+        "media": 9.17
+    },
+    {
+        "aluno": "juninho junior",
+        "nota1": 6.0,
+        "nota2": 5.7,
+        "nota3": 4.0,
+        "media": 5.23
+    }
+]
