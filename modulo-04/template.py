@@ -4,8 +4,8 @@ AVALIAÇÃO — Módulo 04: Definição e Chamada de Funções
 Curso de Capacitação Full Stack – ITEAM
 Professor: Msc. Hygo Sousa De Oliveira
 
-Aluno(a): <SEU NOME COMPLETO>
-Data    : <DATA DE ENTREGA>
+Aluno(a): <GWYLHERMM MOTA RODRIGUES>
+Data    : <28/10/2026>
 =============================================================
 
 INSTRUÇÕES:
@@ -41,7 +41,8 @@ COMO VERIFICAR O PREENCHIMENTO:
 # D) 0
 # E) TypeError: somar() missing return
 # ------------------------------------------------------------
-Q01 = "?"
+# Justificativa: a função não tem return, então devolve None implicitamente.
+Q01 = "C"
 
 
 # ------------------------------------------------------------
@@ -59,7 +60,8 @@ Q01 = "?"
 # D) "Olá, Ana!" e "Olá, Bruno!"
 # E) TypeError: saudar() missing 1 required argument
 # ------------------------------------------------------------
-Q02 = "?"
+# Justificativa: na 1ª chamada usa o padrão "Olá"; na 2ª, "Bom dia" substitui o padrão.
+Q02 = "A"
 
 
 # ------------------------------------------------------------
@@ -80,7 +82,9 @@ Q02 = "?"
 # D) 10 e 10
 # E) 99 e 99
 # ------------------------------------------------------------
-Q03 = "?"
+# Justificativa: o x = 99 cria uma variável local; dentro da função imprime 99
+# e o x global continua 10.
+Q03 = "B"
 
 
 # ------------------------------------------------------------
@@ -97,7 +101,8 @@ Q03 = "?"
 # D) 7
 # E) 8
 # ------------------------------------------------------------
-Q04 = "?"
+# Justificativa: valores é a tupla (3, 7, 1, 9, 2); max = 9, min = 1, 9 - 1 = 8.
+Q04 = "E"
 
 
 # ------------------------------------------------------------
@@ -118,7 +123,8 @@ Q04 = "?"
 # D) [1, 4, 9, 16]
 # E) 8
 # ------------------------------------------------------------
-Q05 = "?"
+# Justificativa: aplicar chama dobrar em cada valor, resultando em [2, 4, 6, 8].
+Q05 = "C"
 
 
 # ------------------------------------------------------------
@@ -137,7 +143,8 @@ Q05 = "?"
 # D) 24
 # E) 16
 # ------------------------------------------------------------
-Q06 = "?"
+# Justificativa: 4 * 3 * 2 * 1 = 24; o caso base (n <= 1) evita recursão infinita.
+Q06 = "D"
 
 
 # ------------------------------------------------------------
@@ -157,7 +164,9 @@ Q06 = "?"
 # D) "Professor" e None
 # E) KeyError: "CARGO" e "Registra i"
 # ------------------------------------------------------------
-Q07 = "?"
+# Justificativa: as chaves viram maiúsculas, então info.get("CARGO") devolve
+# "Professor". Os 10 primeiros caracteres da docstring são "Registra i".
+Q07 = "A"
 
 
 # ──────────────────────────────────────────────────────────────
