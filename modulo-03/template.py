@@ -4,8 +4,8 @@ AVALIAÇÃO — Módulo 03: Estrutura de Dados
 Curso de Capacitação Full Stack – ITEAM
 Professor: Msc. Hygo Sousa De Oliveira
 
-Aluno(a): <SEU NOME COMPLETO>
-Data    : <DATA DE ENTREGA>
+Aluno(a): <GWYLHERMM MOTA RODRIGUES>
+Data    : <28/10/2026>
 =============================================================
 
 INSTRUÇÕES:
@@ -40,7 +40,9 @@ COMO VERIFICAR O PREENCHIMENTO:
 # D) IndexError: list index out of range
 # E) "uva"
 # ------------------------------------------------------------
-Q01 = "?"   # substitua pela sua resposta
+# Justificativa: a lista final é ["maçã", "abacaxi", "uva", "laranja", "manga"].
+# O índice -2 é o penúltimo elemento: "laranja".
+Q01 = "A"
 
 
 # ------------------------------------------------------------
@@ -56,7 +58,8 @@ Q01 = "?"   # substitua pela sua resposta
 # D) (99, 20, 30) — índice 0 é substituído
 # E) TypeError: 'tuple' object does not support item assignment
 # ------------------------------------------------------------
-Q02 = "?"
+# Justificativa: tuplas são imutáveis, então a atribuição gera TypeError.
+Q02 = "E"
 
 
 # ------------------------------------------------------------
@@ -72,7 +75,8 @@ Q02 = "?"
 # D) "Ana"
 # E) None
 # ------------------------------------------------------------
-Q03 = "?"
+# Justificativa: a chave "email" não existe, então .get() devolve o padrão.
+Q03 = "C"
 
 
 # ------------------------------------------------------------
@@ -88,7 +92,8 @@ Q03 = "?"
 # D) 8
 # E) 6
 # ------------------------------------------------------------
-Q04 = "?"
+# Justificativa: os valores únicos são {1, 2, 3, 4, 5, 6, 9}, ou seja, 7.
+Q04 = "B"
 
 
 # ------------------------------------------------------------
@@ -104,7 +109,9 @@ Q04 = "?"
 # D) [9.0, 8.5]
 # E) [9.0, 7.0]
 # ------------------------------------------------------------
-Q05 = "?"
+# Justificativa: ordenada fica [9.0, 8.5, 7.0, 6.0, 5.5]; o slice [1:3]
+# pega os índices 1 e 2: [8.5, 7.0].
+Q05 = "C"
 
 
 # ------------------------------------------------------------
@@ -120,7 +127,9 @@ Q05 = "?"
 # D) [0]
 # E) []
 # ------------------------------------------------------------
-Q06 = "?"
+# Justificativa: só "borracha" tem quantidade 0, e a comprehension
+# guarda o nome do item numa lista.
+Q06 = "B"
 
 
 # ------------------------------------------------------------
@@ -137,7 +146,8 @@ Q06 = "?"
 # D) 8
 # E) 2
 # ------------------------------------------------------------
-Q07 = "?"
+# Justificativa: o que está só na turma A é {"Ana", "Bruno"}, ou seja, 2.
+Q07 = "E"
 
 
 # ------------------------------------------------------------
@@ -153,7 +163,9 @@ Q07 = "?"
 # D) [4, 16, 36, 64, 100]
 # E) [1, 9, 25, 49, 81]
 # ------------------------------------------------------------
-Q08 = "?"
+# Justificativa: os pares de 1 a 10 são 2, 4, 6, 8, 10; elevados ao
+# quadrado dão [4, 16, 36, 64, 100].
+Q08 = "D"
 
 
 # ------------------------------------------------------------
@@ -178,7 +190,8 @@ Q08 = "?"
 # D) 5
 # E) 3
 # ------------------------------------------------------------
-Q09 = "?"
+# Justificativa: soma os membros de todas as equipes: 5 + 3 = 8.
+Q09 = "A"
 
 
 # ------------------------------------------------------------
@@ -202,8 +215,9 @@ Q09 = "?"
 # D) ["Carlos", "Beatriz"]
 # E) ["Carlos", "Beatriz", "Diego"]
 # ------------------------------------------------------------
-Q10 = "?"
-
+# Justificativa: médias: Carlos = 8.0, Beatriz ≈ 9.67, Diego = 5.0.
+# Só Carlos e Beatriz ficam com média >= 7.0.
+Q10 = "D"
 
 # ──────────────────────────────────────────────────────────────
 # VERIFICADOR AUTOMÁTICO
