@@ -12,5 +12,12 @@
         "nota2": 5.7,
         "nota3": 4.0,
         "media": 5.23
+    },
+    {
+        "aluno": "gwy m",
+        "nota1": 5.0,
+        "nota2": 6.0,
+        "nota3": 7.0,
+        "media": 6.0
     }
 ]

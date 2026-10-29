@@ -49,6 +49,8 @@ class Salao:
         # DICA: adicione aqui o bloco:
         #   if not isinstance(equipe, Equipe):
         #       raise TypeError("Apenas objetos Equipe podem ser adicionados.")
+        if not isinstance(equipe, Equipe):
+            raise TypeError("Apenas objetos Equipe podem ser adicionados.")
         self.__equipes.append(equipe)   # ← sem validação qualquer coisa entra
         print(f"  Equipe '{equipe.nome_equipe}' registrada no salão.")
 
@@ -94,7 +96,7 @@ class Salao:
 
         for f in todos_funcionarios:
             # BUG 13 ↓  usando salario_base em vez de calcular_salario()
-            total += f.salario_base   # ← ERRADO: troque por  f.calcular_salario()
+            total += f.calcular_salario()   # ← ERRADO: troque por  f.calcular_salario()
             print(f"  {f}")
 
         # Adiciona o salário do coordenador também

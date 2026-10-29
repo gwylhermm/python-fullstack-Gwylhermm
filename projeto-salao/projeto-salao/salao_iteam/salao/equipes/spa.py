@@ -28,6 +28,8 @@ class EquipeSpa(Equipe):
         # BUG 11 ↓  atributo 'pacotes_disponiveis' não declarado aqui
         # DICA: adicione a linha abaixo após o super().__init__:
         # self.pacotes_disponiveis = ["Relaxamento", "Pedras quentes", "Aromaterapia", "Drenagem"]
+        self.pacotes_disponiveis = ["Relaxamento", "Pedras quentes",
+                                    "Aromaterapia", "Drenagem"]
 
     def descricao_servicos(self) -> str:
         # BUG 11 ↓  AttributeError: 'EquipeSpa' object has no attribute 'pacotes_disponiveis'
